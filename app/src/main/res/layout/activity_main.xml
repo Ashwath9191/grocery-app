@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gw">
+
+    <!-- Grocery Mart Heading -->
+
+    <!-- Login Text -->
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="204dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="152dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="GROCERY\nMART"
+        android:textColor="#6E8F68"
+        android:textSize="32sp"
+
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:textSize="35sp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#1E2A78"
+
+        app:layout_constraintTop_toBottomOf="@id/titleText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"/>
+
+    <!-- Mobile Number -->
+
+    <!-- OTP -->
+
+    <EditText
+        android:id="@+id/mobileEditText"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:background="#F2F2F2"
+        android:hint="Enter Mobile Number"
+        android:inputType="phone"
+
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loginText" />
+
+    <EditText
+        android:id="@+id/otpEditText"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:hint="Enter OTP"
+        android:inputType="number"
+        android:padding="15dp"
+        android:background="#F2F2F2"
+
+        app:layout_constraintTop_toBottomOf="@id/mobileEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <!-- OTP Hint -->
+
+    <TextView
+        android:id="@+id/otpHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textColor="#888888"
+        android:textSize="12sp"
+
+        app:layout_constraintTop_toBottomOf="@id/otpEditText"
+        app:layout_constraintEnd_toEndOf="@id/otpEditText"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Verify Button -->
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#2ECC71"
+        android:text="Verify OTP"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/otpHint" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
